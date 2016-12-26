@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Todo</string>
+    <string name="email">email</string>
+    <string name="haslo">haslo</string>
+    <string name="zaloguj">Zaloguj</string>
+    <string name="zarejestruj">Zarejestruj</string>
+    <string name="tytul">Tytul</string>
+    <string name="opis">Opis</string>
+    <string name="name">Name</string>
+    <string name="datadodania">"Data dodania: "</string>
+    <string name="noconnect">Brak połączenia z internetem!!</string>
+</resources>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_log_reg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.rzessskidesign.todo.ui.LoginRegister.LogReg">
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="5dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_below="@+id/LoginButton"
+        android:id="@+id/view"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:hint="@string/email"
+        android:ems="10"
+        android:layout_below="@+id/RegisterName"
+        android:layout_alignLeft="@+id/RegisterName"
+        android:layout_alignStart="@+id/RegisterName"
+        android:layout_marginTop="27dp"
+        android:id="@+id/RegisterEmail" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:hint="@string/haslo"
+        android:layout_below="@+id/RegisterEmail"
+        android:layout_alignLeft="@+id/RegisterEmail"
+        android:layout_alignStart="@+id/RegisterEmail"
+        android:layout_marginTop="19dp"
+        android:id="@+id/RegisterPassword" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="@string/haslo"
+        android:ems="10"
+        android:layout_marginTop="20dp"
+        android:id="@+id/LoginPassword"
+        android:layout_below="@+id/LoginEmail"
+        android:layout_alignLeft="@+id/LoginEmail"
+        android:layout_alignStart="@+id/LoginEmail" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:hint="@string/email"
+        android:ems="10"
+        android:layout_marginTop="11dp"
+        android:id="@+id/LoginEmail"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="@string/zaloguj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:id="@+id/LoginButton"
+        android:layout_below="@+id/LoginPassword"
+        android:layout_alignRight="@+id/LoginPassword"
+        android:layout_alignEnd="@+id/LoginPassword" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="@string/name"
+        android:ems="10"
+        android:id="@+id/RegisterName"
+        android:layout_below="@+id/view"
+        android:layout_alignRight="@+id/LoginButton"
+        android:layout_alignEnd="@+id/LoginButton"
+        android:layout_marginTop="28dp" />
+
+    <Button
+        android:text="@string/zarejestruj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/RegisterButton"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/RegisterPassword"
+        android:layout_alignRight="@+id/RegisterPassword"
+        android:layout_alignEnd="@+id/RegisterPassword" />
+</RelativeLayout>
